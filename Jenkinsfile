@@ -12,7 +12,7 @@ pipeline {
   
   stages {
     stage('Prepare') {
-      stpes {
+      steps {
         echo 'Testing ..'
       }
     }
