@@ -69,10 +69,10 @@ pipeline {
                 sh 'sudo apt-get install python3-pip jq curl'
                 sh 'sudo pip3 install virtualenv'
                 script {
-					reports = readJSON text: '{}'
+                    reports = readJSON text: '{}'
 //					catchError {sh "rm -rf ${env.JOB_NAME}*"}
 //					deleteDir()
-				}
+                }
             }
         }
 
@@ -122,7 +122,7 @@ pipeline {
 // 			}
 // 		}
 
-		stage('Setup') {
+        stage('Setup') {
             steps {
                 script {
                     sh 'virtualenv venv'
