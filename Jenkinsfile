@@ -65,7 +65,7 @@ pipeline {
             steps {
                 echo "Start Build Number #${currentBuild.number}"
                 echo 'Installing requirements ...'
-                sh 'sudo apt-get update'
+//                sh 'sudo apt-get update'
                 sh 'sudo apt-get install python3-pip jq curl'
                 sh 'sudo pip3 install virtualenv'
                 script {
