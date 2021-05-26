@@ -66,7 +66,7 @@ pipeline {
                 echo "Start Build Number #${currentBuild.number}"
                 echo 'Installing requirements ...'
 //                 sh 'sudo apt-get update'
-                sh 'sudo apt-get --allow-unauthenticated install python3-pip jq curl'
+                sh 'sudo apt-get --allow-unauthenticated install -y python3-pip jq curl'
                 sh 'sudo pip3 install virtualenv'
                 script {
                     reports = readJSON text: '{}'
