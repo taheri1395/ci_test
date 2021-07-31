@@ -125,10 +125,7 @@ pipeline {
         stage('Setup') {
             steps {
                 script {
-                    sh 'virtualenv venv'
-                    sh 'source bin/activate'
-                    sh 'pip install -r requirements.txt'
-                    sh 'deactivate'
+                    echo 'Setuping ...'
                 }
             }
         }
