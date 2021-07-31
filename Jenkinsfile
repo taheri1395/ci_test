@@ -126,6 +126,7 @@ pipeline {
             steps {
                 script {
                     echo 'Setuping ....'
+		    echo 'Finished!!!'
                 }
             }
         }
