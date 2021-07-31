@@ -67,7 +67,7 @@ pipeline {
                 echo 'Installing requirements ...'
 //                 sh 'sudo apt-get update'
                 sh 'sudo apt-get --allow-unauthenticated install -y python3-pip jq curl'
-                sh 'sudo pip3 install virtualenv'
+		sh 'sudo apt-get install -y python3.7-dev python3.7-venv'
                 script {
                     reports = readJSON text: '{}'
 //                     catchError {sh "rm -rf ${env.JOB_NAME}*"}
