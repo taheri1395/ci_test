@@ -125,7 +125,7 @@ pipeline {
         stage('Setup') {
             steps {
                 script {
-                    echo 'Setuping .......'
+                    echo 'Setuping ....'
                 }
             }
         }
